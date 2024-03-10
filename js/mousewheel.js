@@ -6,7 +6,7 @@ $(document).ready(function() {
     function handleMouseWheel(e, delta) {
         if ($(window).width() > 1024) {
             // Apply horizontal scrolling for screens above 1024px wide
-            this.scrollLeft -= (delta * 5);
+            this.scrollLeft -= (delta * 30);
             e.preventDefault();
         }
         // For screens below 1025px, allow default vertical scrolling behavior
