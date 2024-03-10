@@ -196,6 +196,9 @@ hr {
 
 @media screen and (max-width: 1024px) {
     section {
+        flex: unset;
+        height: 100%;
+        min-height: unset;
         padding: 4rem 1.5rem;
     }
     
