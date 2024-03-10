@@ -165,7 +165,6 @@ section {
     flex: 0 0 100vw;
     min-height: 100vh;
     padding: 6rem 1.5rem;
-    border-right: 1px solid #DF2935;
 }
 
 .content {
