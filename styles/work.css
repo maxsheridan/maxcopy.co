@@ -57,7 +57,7 @@ a {
 }
 
 #longform a {
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid #DF2935;
 }
 
 h3 {
@@ -75,7 +75,7 @@ h2 {
     font-weight: 500;
     line-height: 1.4;
     margin: 1.5rem 0 1.5rem 0;
-    color: orangered;
+    color: #DF2935
 }
 
 h1 {
@@ -142,7 +142,7 @@ nav.links {
 }
 
 nav.links a.active {
-    color: orangered;
+    color: #DF2935;
 }
 
 .footer {
@@ -188,7 +188,7 @@ section {
     flex: 0 0 100vw;
     height: 100vh;
     padding: 6rem 1.5rem;
-    border-right: 1px solid orangered;
+    border-right: 1px solid #DF2935;
 }
 
 .content {
@@ -246,14 +246,14 @@ section {
 }
 
 .next {
-    color: orangered;
+    color: #DF2935;
     padding-top: 2rem;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background: orangered;
+    background: #DF2935;
     margin: 1.5rem 0;
 }
 

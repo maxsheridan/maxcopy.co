@@ -144,7 +144,7 @@ nav.links {
 }
 
 nav.links a.active {
-    color: orangered;
+    color: #DF2935;
 }
 
 .footer {
@@ -190,7 +190,7 @@ section {
     flex: 0 0 100vw;
     min-height: 100vh;
     padding: 6rem 1.5rem;
-    border-right: 1px solid orangered;
+    border-right: 1px solid #DF2935;
 }
 
 .content {
@@ -224,14 +224,14 @@ section {
 }
 
 .next {
-    color: orangered;
+    color: #DF2935;
     padding-top: 2rem;
 }
 
 hr {
     height: 1px;
     margin: 2rem 0;
-    background: orangered;
+    background: #DF2935;
     border: 0;
 }
 
