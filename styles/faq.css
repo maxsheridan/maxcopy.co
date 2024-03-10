@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    cursor: url(/assets/graphics/smiley_point.svg), auto;
+}    
+
+html a:hover {
+    cursor: url(/assets/graphics/smiley_hover.svg), auto;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    font-family: 'ABC Diatype', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5; 
+    margin: 0;
+}
+
+b,
+strong {
+    font-family: 'ABC Diatype Medium';
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+h1 {
+    font-family: 'ABC Diatype Medium', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1.05rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+.header {
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    padding: 0; 
+    background-color: whitesmoke;
+    border-bottom: 3px solid #111;
+}
+
+.header p  {
+    padding: 1rem 0;
+}
+
+nav p a:nth-child(n+2) {
+    padding-left: .5rem;
+}
+
+nav.title {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 50%; 
+    padding-left: 1.5rem;
+}
+
+nav.links {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 50%; 
+    padding-right: 1.5rem;
+}
+
+nav.links a.active {
+    color: orangered;
+}
+
+.footer {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    padding: 0;
+    background-color: whitesmoke; 
+    border-top: 3px solid #111;
+}
+
+.footer {
+    .title {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 50%; 
+    padding-left: 1.5rem;
+    }
+
+    .copyright {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 50%; 
+    padding-right: 1.5rem;
+    }
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}   
+
+section {
+    flex: 0 0 45vw;
+    min-height: 100vh;
+    padding: 6rem 1.5rem;
+    border-right: 1px solid orangered;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem;
+}   
+
+.text-wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.next {
+    color: orangered;
+    padding-top: 2rem;
+}
+
+hr {
+    height: 1px;
+    background: orangered;
+    margin: 1.5rem 0;
+    border: 0;
+}
+
+.hr-mobile {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1025px) {
+    .hr-mobile {
+        display: none;
+    }
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 1024px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    section {
+        flex: unset;
+        height: 100%;
+        min-height: unset;
+        padding: 4rem 1.5rem;
+        border-right: none;
+    }
+
+    section:first-child {
+        padding-top: 8rem;
+    }
+
+    section:last-child {
+        padding-bottom: 8rem;
+    }
+
+    .content {
+        flex: 0 0 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .next {
+        display: none;
+    }
+}
