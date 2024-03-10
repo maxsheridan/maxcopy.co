@@ -15,7 +15,7 @@ html a:hover {
 
 body {
     background-color: whitesmoke;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -183,7 +183,7 @@ nav.links a.active {
 
 section {
     flex: 0 0 100vw;
-    min-height: 100vh;
+    height: 100vh;
     padding: 6rem 1.5rem;
     border-right: 1px solid orangered;
 }
