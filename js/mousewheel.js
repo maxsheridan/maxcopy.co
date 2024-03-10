@@ -3,9 +3,10 @@
 
 /*! Control */
 $(document).ready(function() {
-    function handleMouseWheel(e, delta) {
+    function handleMouseWheel(e) {
         if ($(window).width() > 1024) {
             // Adjust the scrolling speed factor according to your preference
+            var delta = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
             this.scrollLeft -= delta * 15;
             e.preventDefault();
         }
@@ -15,10 +16,10 @@ $(document).ready(function() {
     function applyMouseWheelHandler() {
         if ($(window).width() > 1024) {
             // Apply mousewheel function only for screens above 1024px wide
-            $('html, body, *').on('mousewheel', handleMouseWheel);
+            $('html, body, *').on('wheel mousewheel', handleMouseWheel);
         } else {
             // Remove mousewheel function for screens below 1025px wide
-            $('html, body, *').off('mousewheel');
+            $('html, body, *').off('wheel mousewheel');
         }
     }
 
@@ -30,4 +31,3 @@ $(document).ready(function() {
         applyMouseWheelHandler();
     });
 });
-
