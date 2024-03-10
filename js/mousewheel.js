@@ -5,25 +5,29 @@
 $(document).ready(function() {
     function handleMouseWheel(e, delta) {
         if ($(window).width() > 1024) {
-            // Apply horizontal scrolling for screens above 1024px wide
-            this.scrollLeft -= (delta * 10);
+            // Adjust the scrolling speed factor according to your preference
+            this.scrollLeft -= delta * 15;
             e.preventDefault();
         }
         // For screens below 1025px, allow default vertical scrolling behavior
     }
-    // Check if the screen width is above 1024 pixels
-    if ($(window).width() > 1024) {
-        // Apply mousewheel function only for screens above 1024px wide
-        $('html, body, *').on('mousewheel', handleMouseWheel);
-    }
-    // Refresh the event handler on window resize
-    $(window).on('resize', function() {
+
+    function applyMouseWheelHandler() {
         if ($(window).width() > 1024) {
-            // Reapply mousewheel function for screens above 1024px wide
-            $('html, body, *').off('mousewheel').on('mousewheel', handleMouseWheel);
+            // Apply mousewheel function only for screens above 1024px wide
+            $('html, body, *').on('mousewheel', handleMouseWheel);
         } else {
             // Remove mousewheel function for screens below 1025px wide
             $('html, body, *').off('mousewheel');
         }
+    }
+
+    // Initial setup
+    applyMouseWheelHandler();
+
+    // Refresh the event handler on window resize
+    $(window).on('resize', function() {
+        applyMouseWheelHandler();
     });
 });
+
