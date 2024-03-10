@@ -311,6 +311,10 @@ hr {
         padding: 0 0 2rem 0;
     }
 
+    .visual img.portrait {
+        min-width: unset;
+    }
+
     .next {
         display: none;
     }
