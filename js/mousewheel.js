@@ -3,31 +3,27 @@
 
 /*! Control */
 $(document).ready(function() {
-    function handleMouseWheel(e) {
+    function handleMouseWheel(e, delta) {
         if ($(window).width() > 1024) {
-            // Adjust the scrolling speed factor according to your preference
-            var delta = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
-            this.scrollLeft -= delta * 15;
+            // Apply horizontal scrolling for screens above 1024px wide
+            this.scrollLeft -= (delta * 10);
             e.preventDefault();
         }
         // For screens below 1025px, allow default vertical scrolling behavior
     }
-
-    function applyMouseWheelHandler() {
-        if ($(window).width() > 1024) {
-            // Apply mousewheel function only for screens above 1024px wide
-            $('html, body, *').on('wheel mousewheel', handleMouseWheel);
-        } else {
-            // Remove mousewheel function for screens below 1025px wide
-            $('html, body, *').off('wheel mousewheel');
-        }
+    // Check if the screen width is above 1024 pixels
+    if ($(window).width() > 1024) {
+        // Apply mousewheel function only for screens above 1024px wide
+        $('html, body, *').on('mousewheel', handleMouseWheel);
     }
-
-    // Initial setup
-    applyMouseWheelHandler();
-
     // Refresh the event handler on window resize
     $(window).on('resize', function() {
-        applyMouseWheelHandler();
+        if ($(window).width() > 1024) {
+            // Reapply mousewheel function for screens above 1024px wide
+            $('html, body, *').off('mousewheel').on('mousewheel', handleMouseWheel);
+        } else {
+            // Remove mousewheel function for screens below 1025px wide
+            $('html, body, *').off('mousewheel');
+        }
     });
 });
