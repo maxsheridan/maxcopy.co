@@ -59,21 +59,13 @@ a {
     border-bottom: 1px solid orangered;
 }
 
-h3 {
-    font-family: 'ABC Diatype Medium', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1.4rem;
-    color: orangered;
-    margin: 1.5rem 0 1.5rem 0;
-}
-
 h2 {
     font-family: 'ABC Diatype Medium', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.4;
-    margin: 0;
+    color: orangered;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 h1 {
@@ -87,9 +79,6 @@ h1 {
 @media screen and (max-width: 480px) {
     p {
         font-size: 1.05rem;
-    }
-    h3 {
-        font-size: 1.2rem;
     }
     h2 {
         font-size: 1.2rem;
