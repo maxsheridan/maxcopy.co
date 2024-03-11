@@ -246,7 +246,7 @@ video {
     #medovie img.portrait {
         max-height: 625px;
     }
-    
+
     #medovie .visual {
         padding: 0 2rem 0 6rem;
     }
@@ -267,7 +267,6 @@ video {
         padding: 0 6rem 0 2rem;   
     }
 }
-
 
 .next {
     color: #DF2935;
@@ -301,11 +300,11 @@ hr {
     }
 
     section:first-child {
-        padding-top: 10rem;
+        padding-top: 8.5rem;
     }
 
     section:last-child {
-        padding-bottom: 10rem;
+        padding-bottom: 8.5rem;
     }
 
     .content {
