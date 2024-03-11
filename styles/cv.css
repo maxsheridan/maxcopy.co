@@ -224,7 +224,8 @@ section {
 
 .next {
     color: #DF2935;
-    padding-top: 1rem;
+    text-align: right;
+    margin-top: 1rem;
 }
 
 hr {
