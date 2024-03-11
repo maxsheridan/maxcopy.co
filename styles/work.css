@@ -200,11 +200,6 @@ section {
     margin: 0 auto;
 }
 
-.visual-wrapper {
-    height: 100%;
-    width: 100%;
-} 
-
 .visual {
     display: flex;
     flex-direction: column;
@@ -212,26 +207,26 @@ section {
     padding: 0 2rem 0 4rem;
 }
 
-.visual img.portrait {
-    width: auto;
+.visual-wrapper.portrait {
+    max-width: 500px;
     min-width: 400px;
-    max-height: 550px;
-}
-
-.visual img.landscape,
-    video.landscape {
-        max-width: 650px;
-        max-height: 550px;
+    margin: 0 auto; 
 } 
 
-/*——Gives more height*/   
-#medovie .visual img.portrait {
-    max-height: 650px;
+.visual-wrapper.landscape {
+    max-width: 800px;
+    margin: 0 auto; 
+} 
+
+.visual-wrapper img, .visual-wrapper video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-/*——Gives less height*/       
-    #becca-europe .visual img {
-    max-height: 500px;
+/*——Gives more height*/   
+#medovie .visual-wrapper.portrait {
+    max-width: 600px;
 }
 
 .text {
