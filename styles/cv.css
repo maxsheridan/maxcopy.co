@@ -228,9 +228,9 @@ section {
 }
 
 hr {
-    height: 1px;
-    margin: 1.75rem 0;
+    height: 1px; 
     background: #DF2935;
+    margin: 1.75rem 0;
     border: 0;
 }
 
