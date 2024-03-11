@@ -233,6 +233,7 @@ video {
     max-height: 450px;
     width: auto;
 }
+
 .text {
     display: flex;
     flex-direction: column;
@@ -248,18 +249,23 @@ video {
     #misfit-union .visual {
         padding: 0 2rem 0 9rem;
     }       
+
     #misfit-union .text {
         padding: 0 9rem 0 2rem;  
     }
+
     #medovie .visual {
         padding: 0 2rem 0 6rem;
-    }       
+    }
+
     #medovie .text {
         padding: 0 6rem 0 2rem; 
     }
+
     #becca-europe .visual {
         padding: 0 2rem 0 6rem;
-    }       
+    }
+
     #becca-europe .text {
         padding: 0 6rem 0 2rem;   
     }
