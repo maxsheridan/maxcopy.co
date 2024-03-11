@@ -225,13 +225,13 @@ video {
 /*——Gives more height*/   
 #medovie img.portrait {
     max-height: 600px;
-    width: auto;
+    width: 100%;
 }
 
 /*——Gives more height*/   
 #becca-europe .img.portrait {
     max-height: 450px;
-    width: auto;
+    width: 100%;
 }
 
 .text {
