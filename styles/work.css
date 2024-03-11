@@ -209,7 +209,7 @@ section {
 
 img.portrait {
     max-height: 550px;
-    width: 100%;
+    width: auto;
     min-width: 400px;
     margin: 0 auto; 
 } 
@@ -231,6 +231,41 @@ video {
 .text-wrapper {
     max-width: 40rem;
     margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 1025px) {
+    #misfit-union .visual {
+        padding: 0 2rem 0 9rem;
+    }       
+
+    #misfit-union .text {
+        padding: 0 9rem 0 2rem;  
+    }
+
+    #medovie img.portrait {
+        max-height: 625px;
+    }
+    
+    #medovie .visual {
+        padding: 0 2rem 0 6rem;
+    }
+
+    #medovie .text {
+        padding: 0 6rem 0 2rem; 
+    }
+
+    #becca-europe img.portrait {
+        max-height: 525px;
+    }
+
+    #becca-europe .visual {
+        padding: 0 2rem 0 6rem;
+    }
+
+    #becca-europe .text {
+        padding: 0 6rem 0 2rem;   
+    }
 }
 
 
