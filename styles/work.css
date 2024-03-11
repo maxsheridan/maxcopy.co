@@ -229,7 +229,28 @@ video {
 
 /*——Gives more height*/   
 #becca-europe .img.portrait {
-    max-height: 500px;
+    max-height: 450px;
+}
+
+@media only screen and (min-width: 1025px) {
+    #misfit-union .visual {
+        padding-left: 6rem;
+    }       
+    #misfit-union .text {
+        padding-right: 6rem;    
+    }
+    #medovie .visual {
+        padding-left: 4rem;
+    }       
+    #medovie .text {
+        padding-right: 4rem;    
+    }
+    #becca-europe .visual {
+        padding-left: 2rem;
+    }       
+    #becca-europe .text {
+        padding-right: 2rem;    
+    }
 }
 
 .text {
