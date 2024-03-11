@@ -231,6 +231,16 @@ video {
 #becca-europe .img.portrait {
     max-height: 450px;
 }
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem 0 2rem;
+}   
+
+.text-wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+}
 
 @media only screen and (min-width: 1025px) {
     #misfit-union .visual {
@@ -251,17 +261,6 @@ video {
     #becca-europe .text {
         padding-right: 2rem;    
     }
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4rem 0 2rem;
-}   
-
-.text-wrapper {
-    max-width: 40rem;
-    margin: 0 auto;
 }
 
 .next {
