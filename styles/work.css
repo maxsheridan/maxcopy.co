@@ -186,7 +186,7 @@ nav.links a.active {
 section {
     flex: 0 0 100vw;
     height: 100vh;
-    padding: 6rem 1.5rem;
+    padding: 5.5rem 1.5rem;
     border-right: 1px solid #DF2935;
 }
 
@@ -246,14 +246,14 @@ section {
 
 .next {
     color: #DF2935;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 hr {
     border: 0;
     height: 1px;
     background: #DF2935;
-    margin: 1.5rem 0;
+    margin: 1.75rem 0;
 }
 
 /*Mobile*/
