@@ -204,7 +204,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem 0 4rem;
+    padding: 0 3rem 0 4rem;
 }
 
 img.portrait {
@@ -234,7 +234,7 @@ video {
 .text {
     display: flex;
     flex-direction: column;
-    padding: 0 4rem 0 2rem;
+    padding: 0 4rem 0 3rem;
 }   
 
 .text-wrapper {
@@ -244,16 +244,16 @@ video {
 
 @media only screen and (min-width: 1025px) {
     #misfit-union .visual {
-        padding: 0 2rem 0 8rem;
+        padding: 0 2rem 0 9rem;
     }       
     #misfit-union .text {
-        padding: 0 8rem 0 2rem;  
+        padding: 0 9rem 0 2rem;  
     }
     #medovie .visual {
-        padding: 0 2rem 0 8rem;
+        padding: 0 2rem 0 6rem;
     }       
     #medovie .text {
-        padding: 0 8rem 0 2rem; 
+        padding: 0 6rem 0 2rem; 
     }
     #becca-europe .visual {
         padding: 0 2rem 0 6rem;
