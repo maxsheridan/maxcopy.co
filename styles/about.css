@@ -164,7 +164,7 @@ nav.links a.active {
 section {
     flex: 0 0 100vw;
     min-height: 100vh;
-    padding: 6rem 1.5rem;
+    padding: 5.5rem 1.5rem;
 }
 
 .content {
@@ -188,7 +188,7 @@ section {
 hr {
     height: 1px;
     background: #DF2935;
-    margin: 1.5rem 0;
+    margin: 1.75rem 0;
     border: 0;
 }
 
