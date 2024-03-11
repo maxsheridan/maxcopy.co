@@ -222,18 +222,6 @@ video {
     margin: 0 auto; 
 } 
 
-/*——Gives more height*/   
-#medovie img.portrait {
-    max-height: 600px;
-    width: 100%;
-}
-
-/*——Gives more height*/   
-#becca-europe .img.portrait {
-    max-height: 450px;
-    width: 100%;
-}
-
 .text {
     display: flex;
     flex-direction: column;
@@ -244,7 +232,6 @@ video {
     max-width: 40rem;
     margin: 0 auto;
 }
-
 
 
 .next {
