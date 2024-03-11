@@ -207,31 +207,29 @@ section {
     padding: 0 2rem 0 4rem;
 }
 
-.visual-wrapper.portrait {
-    max-width: 400px;
+img.portrait {
+    max-height: 550px;
+    width: 100%;
     min-width: 400px;
     margin: 0 auto; 
 } 
 
-.visual-wrapper.landscape {
+img.landscape,
+video {
+    width: 100%;
     max-width: 800px;
+    height: auto;
     margin: 0 auto; 
 } 
 
-.visual-wrapper img, .visual-wrapper video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+/*——Gives more height*/   
+#medovie img.portrait {
+    max-height: 650px;
 }
 
 /*——Gives more height*/   
-#medovie .visual-wrapper.portrait {
-    max-width: 600px;
-}
-
-/*——Gives more height*/   
-#becca-europe .visual-wrapper.portrait {
-    max-width: 550px;
+#becca-europe .img.portrait {
+    max-height: 500px;
 }
 
 .text {
