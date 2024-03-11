@@ -300,11 +300,11 @@ hr {
     }
 
     section:first-child {
-        padding-top: 8.5rem;
+        padding-top: 8rem;
     }
 
     section:last-child {
-        padding-bottom: 8.5rem;
+        padding-bottom: 8rem;
     }
 
     .content {
