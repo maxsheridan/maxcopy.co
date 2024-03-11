@@ -229,6 +229,11 @@ section {
     max-width: 600px;
 }
 
+/*——Gives more height*/   
+#becca-europe .visual-wrapper.portrait {
+    max-width: 550px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
