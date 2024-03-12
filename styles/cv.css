@@ -68,16 +68,25 @@ h3 {
     font-weight: 500;
     line-height: 1.4rem;
     margin: 0 0 1rem 0;
- 
-}
+ }
 
 h2 {
     font-family: 'ABC Diatype Medium', sans-serif;
     font-size: 1.35rem;
     font-weight: 500;
     line-height: 1.4;
+    color: #DF2935;
     margin: 1rem 0 1rem 0;
+}
 
+@media only screen and (min-width: 1025px) {
+    #skills,
+    #background {
+        #two,
+        #four {
+            margin-top: 2rem;
+        }
+    }
 }
 
 h1 {
@@ -187,35 +196,40 @@ nav.links a.active {
 
 section {
     flex: 0 0 100vw;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     padding: 5.5rem 1.5rem;
     border-right: 1px solid #DF2935;
 }
 
-.content {
+.row {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
-    height: 100%;
+    padding: 0 3rem 0 3rem;
     max-width: 1480px;
     margin: 0 auto;
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
+.row .description {
+    width: 50%
 }
 
-.text-wrapper {
-    max-width: 40rem;
-    margin: 0 auto;
+#contact .description {
+    width: 100%;
 }
 
-.next {
+.row.scroll-cue {
+    justify-content: flex-end;
     color: #DF2935;
+    padding: 1rem 3rem 0 0;
+}
+
+.scroll-cue {
     text-align: right;
-    margin-top: 1rem;
+    color: #DF2935;
+    padding: 1rem 0 0 0;
 }
 
 hr {
@@ -232,25 +246,17 @@ hr {
 }
 
 @media only screen and (min-width: 1025px) {
-    .text:first-child {
-        padding-right: 2rem;
+    .row .description:first-child {
+        padding: 0 4rem 0 0;
     }
 
-    .text:last-child {
-        padding-left: 2rem;
+    .row .description:last-child {
+        padding: 0 0 0 4rem;
     }
 
     .hr-mobile {
         display: none;
     }
-}
-
-.placeholder {
-    color: transparent;
-}
-
-#education h1 {
-    margin-top: 2rem;
 }
 
 /*Mobile*/
@@ -280,19 +286,28 @@ hr {
         padding-bottom: 8rem;
     }
 
-    .content {
+    .row {
         flex: 0 0 1;
         flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
     }
 
-    .text {
+    .row .description {
         width: 100%;
-        max-width: 100%;
+    }
+
+    .title,
+    .description {
+        width: 100%;
+        max-width: 40rem;
         padding: 0;
     }
 
-    .next {
+    .description p {
+        padding-bottom: .5rem;
+    }
+
+    .scroll-cue {
         display: none;
     }
 
