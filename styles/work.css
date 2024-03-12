@@ -14,9 +14,15 @@ html a:hover {
 
 body {
     background-color: whitesmoke;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        overflow-y: hidden;
+    }
 }
 
 @font-face {
