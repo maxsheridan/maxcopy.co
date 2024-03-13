@@ -239,6 +239,19 @@ video {
     margin: 0 auto;
 }
 
+.next {
+    color: #DF2935;
+    padding-top: 1rem;
+}
+
+hr {
+    height: 1px;
+    background: #DF2935;
+    margin: 1.75rem 0;
+    border: 0;
+}
+
+/*Desktop*/
 
 @media only screen and (min-width: 1025px) {
     img {
@@ -255,18 +268,6 @@ video {
     #becca-europe img.portrait {
         max-height: 525px;
     }
-}
-
-.next {
-    color: #DF2935;
-    padding-top: 1rem;
-}
-
-hr {
-    height: 1px;
-    background: #DF2935;
-    margin: 1.75rem 0;
-    border: 0;
 }
 
 /*Mobile*/
