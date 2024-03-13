@@ -251,3 +251,23 @@ hr {
         display: none;
     }
 }
+
+/*Screen size warning*/
+
+@media screen and (min-width: 1025px) and (max-height: 300px)  {
+    section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-height: 300px)  {
+    .page::after {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        content: "Earth to Houston. This screen needs to be a little bigger.";
+        width: 100vw;
+        font-size: 1.5rem;
+    }
+}
