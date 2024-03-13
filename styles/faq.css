@@ -267,10 +267,12 @@ hr {
         justify-content: center;
         align-items: center;
         width: 100vw;
-        font-family: 'ABC Diatype';
+        height: 100vh;
+        font-family: 'ABC Diatype', sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
         font-style: normal;
         content: "Earth to Houston. This screen needs to be a little bigger.";
+        z-index: -1;
     }
 }
