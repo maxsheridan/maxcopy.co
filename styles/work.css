@@ -268,6 +268,15 @@ hr {
     #becca-europe img.portrait {
         max-height: 525px;
     }
+
+    #misfit-union .content {
+        max-width: 1280px;
+    }
+
+    #medovie .content,
+    #becca-europe {
+        max-width: 1380px;
+    }
 }
 
 /*Mobile*/
