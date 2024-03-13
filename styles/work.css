@@ -248,25 +248,12 @@ video {
         max-height: 450px;
     }
 
-    #misfit-union .visual {
-        padding: 0 2rem 0 9rem;
-    }       
-
-
     #medovie img.portrait {
         max-height: 625px;
     }
 
-    #medovie .visual {
-        padding: 0 2rem 0 6rem;
-    }
-
     #becca-europe img.portrait {
         max-height: 525px;
-    }
-
-    #becca-europe .visual {
-        padding: 0 2rem 0 6rem;
     }
 }
 
