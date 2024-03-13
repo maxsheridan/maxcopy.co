@@ -226,12 +226,6 @@ section {
     width: 100%;
 }
 
-.row.scroll-cue {
-    justify-content: flex-end;
-    color: #DF2935;
-    padding: 1rem 3rem 0 0;
-}
-
 .scroll-cue {
     text-align: right;
     color: #DF2935;
