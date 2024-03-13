@@ -212,8 +212,8 @@ section {
 .row {
     display: flex;
     width: 100%;
-    padding: 0;
     max-width: 1480px;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -236,12 +236,6 @@ hr {
     background: #DF2935;
     margin: 1.75rem 0;
     border: 0;
-}
-
-@media only screen and (max-width: 1024px) {
-    .hr-desktop {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -308,7 +302,11 @@ hr {
     .scroll-cue {
         display: none;
     }
-
+    
+  .hr-desktop {
+        display: none;
+    }
+    
     .placeholder {
         display: none;
     }
