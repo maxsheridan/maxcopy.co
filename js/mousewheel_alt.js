@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (window.innerWidth > 1024) {
             // Apply horizontal scrolling for screens above 1024px wide
-            window.scrollBy({
-                left: delta * 10,
-                behavior: 'smooth'
-            });
+            window.scrollBy(delta * 2, 0);
             event.preventDefault();
         }
         // For screens below 1025px, allow default vertical scrolling behavior
