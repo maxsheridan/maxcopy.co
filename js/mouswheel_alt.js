@@ -1,32 +1,40 @@
-let pages = document.querySelectorAll(".page");
-let section = document.querySelector("section");
-let sectionWidth;
-let pageWidth;
-let currentPos = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    var lastScrollTime = Date.now();
 
-function init() {
-  sectionWidth = slider.getBoundingClientRect().width;
-  pageWidth = sectionWidth / items.length;
-  document.body.style.height = `${
-    sectionWidth - (window.innerWidth - window.innerHeight)
-  }px`;
-}
+    function handleWheel(event) {
+        var currentTime = Date.now();
+        var timeDiff = currentTime - lastScrollTime;
+        lastScrollTime = currentTime;
 
-function setSectionWidth() {
-  let totalWidth = 0;
- pages.forEach((page) => {
-    totalWidth += page.offsetWidth;
-  });
+        if (timeDiff > 200) {
+            return; // Ignore rapid scrolling events to avoid misinterpretation
+        }
 
-  section.style.width = `${totalWidth}px`;
-}
+        var deltaX = event.deltaX;
+        var deltaY = event.deltaY;
 
-function animate() {
-  init();
-  setSectionWidth();
-  currentPos = window.scrollY;
-  section.style.transform = `translateX(${-currentPos}px)`;
-  requestAnimationFrame(animate);
-}
+        if (window.innerWidth > 1024 && Math.abs(deltaX) > Math.abs(deltaY)) {
+            // Apply horizontal scrolling for screens above 1024px wide
+            window.scrollBy(deltaX * 2, 0);
+            event.preventDefault();
+        }
+    }
 
-animate();
+    // Check if the screen width is above 1024 pixels
+    if (window.innerWidth > 1024) {
+        // Apply wheel event listener only for screens above 1024px wide
+        document.addEventListener('wheel', handleWheel);
+    }
+
+    // Refresh the event handler on window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 1024) {
+            // Reapply wheel event listener for screens above 1024px wide
+            document.removeEventListener('wheel', handleWheel);
+            document.addEventListener('wheel', handleWheel);
+        } else {
+            // Remove wheel event listener for screens below 1025px wide
+            document.removeEventListener('wheel', handleWheel);
+        }
+    });
+});
