@@ -239,7 +239,7 @@ video {
     margin: 0 auto;
 }
 
-.next {
+.scroll-cue {
     color: #DF2935;
     padding-top: 1rem;
 }
@@ -338,7 +338,7 @@ hr {
         min-width: unset;
     }
 
-    .next {
+    .scroll-cue {
         display: none;
     }
 }
