@@ -1,30 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-    function handleWheel(event) {
-        var deltaX = event.deltaX;
-        var deltaY = event.deltaY;
+let items = document.querySelectorAll(".item");
+let slider = document.querySelector(".slider");
+let sliderWidth;
+let itemWidth;
+let currentPos = 0;
 
-        if (window.innerWidth > 1024 && Math.abs(deltaX) > Math.abs(deltaY)) {
-            // Apply horizontal scrolling for screens above 1024px wide
-            window.scrollBy(deltaX * 2, 0);
-            event.preventDefault();
-        }
-    }
+function init() {
+  sliderWidth = slider.getBoundingClientRect().width;
+  itemWidth = sliderWidth / items.length;
+  document.body.style.height = `${
+    sliderWidth - (window.innerWidth - window.innerHeight)
+  }px`;
+}
 
-    // Check if the screen width is above 1024 pixels
-    if (window.innerWidth > 1024) {
-        // Apply wheel event listener only for screens above 1024px wide
-        document.addEventListener('wheel', handleWheel);
-    }
+function setSliderWidth() {
+  let totalWidth = 0;
+  items.forEach((item) => {
+    totalWidth += item.offsetWidth;
+  });
 
-    // Refresh the event handler on window resize
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 1024) {
-            // Reapply wheel event listener for screens above 1024px wide
-            document.removeEventListener('wheel', handleWheel);
-            document.addEventListener('wheel', handleWheel);
-        } else {
-            // Remove wheel event listener for screens below 1025px wide
-            document.removeEventListener('wheel', handleWheel);
-        }
-    });
-});
+  slider.style.width = `${totalWidth}px`;
+}
+
+function animate() {
+  init();
+  setSliderWidth();
+  currentPos = window.scrollY;
+  slider.style.transform = `translateX(${-currentPos}px)`;
+  requestAnimationFrame(animate);
+}
+
+animate();
