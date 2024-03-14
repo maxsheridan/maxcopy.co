@@ -185,11 +185,6 @@ section {
     margin: 0 auto;
 }
 
-.scroll-cue {
-    color: #BA1C26;
-    padding-top: 1rem;
-}
-
 hr {
     height: 1px;
     background: #BA1C26;
@@ -245,10 +240,6 @@ hr {
         width: 100%;
         max-width: 100%;
         padding: 0;
-    }
-
-    .next {
-        display: none;
     }
 }
 
