@@ -62,7 +62,7 @@ a {
 }
 
 #longform a {
-    border-bottom: 1px solid #DF2935;
+    border-bottom: 1px solid #BA1C26;
 }
 
 h3 {
@@ -80,7 +80,7 @@ h2 {
     font-weight: 500;
     line-height: 1.4;
     margin: 1.5rem 0 1.5rem 0;
-    color: #DF2935;
+    color: #BA1C26;
 }
 
 h1 {
@@ -147,7 +147,7 @@ nav.links {
 }
 
 nav.links a.active {
-    color: #DF2935;
+    color: #BA1C26;
 }
 
 .footer {
@@ -240,13 +240,13 @@ video {
 }
 
 .scroll-cue {
-    color: #DF2935;
+    color: #BA1C26;
     padding-top: 1rem;
 }
 
 hr {
     height: 1px;
-    background: #DF2935;
+    background: #BA1C26;
     margin: 1.75rem 0;
     border: 0;
 }
