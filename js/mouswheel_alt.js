@@ -1,31 +1,31 @@
-let items = document.querySelectorAll(".item");
-let slider = document.querySelector(".slider");
-let sliderWidth;
-let itemWidth;
+let pages = document.querySelectorAll(".page");
+let section = document.querySelector("section");
+let sectionWidth;
+let pageWidth;
 let currentPos = 0;
 
 function init() {
-  sliderWidth = slider.getBoundingClientRect().width;
-  itemWidth = sliderWidth / items.length;
+  sectionWidth = slider.getBoundingClientRect().width;
+  pageWidth = sectionWidth / items.length;
   document.body.style.height = `${
-    sliderWidth - (window.innerWidth - window.innerHeight)
+    sectionWidth - (window.innerWidth - window.innerHeight)
   }px`;
 }
 
-function setSliderWidth() {
+function setSectionWidth() {
   let totalWidth = 0;
-  items.forEach((item) => {
-    totalWidth += item.offsetWidth;
+ pages.forEach((page) => {
+    totalWidth += page.offsetWidth;
   });
 
-  slider.style.width = `${totalWidth}px`;
+  section.style.width = `${totalWidth}px`;
 }
 
 function animate() {
   init();
-  setSliderWidth();
+  setSectionWidth();
   currentPos = window.scrollY;
-  slider.style.transform = `translateX(${-currentPos}px)`;
+  section.style.transform = `translateX(${-currentPos}px)`;
   requestAnimationFrame(animate);
 }
 
