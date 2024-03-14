@@ -214,15 +214,15 @@ section {
 }
 
 img.portrait {
-    height: 100%;
+    height: initial;
     max-height: 550px;
-    width: 100%;
+    width: initial;
     margin: 0 auto; 
 } 
 
 img.landscape,
 video {
-    width: 100%;
+    width: initial;
     max-width: 800px;
     height: auto;
     margin: 0 auto; 
