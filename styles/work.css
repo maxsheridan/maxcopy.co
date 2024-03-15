@@ -202,8 +202,8 @@ section {
 
 .content {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
     max-width: 1520px;
@@ -212,7 +212,6 @@ section {
 
 .visual {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     padding: 0 3rem 0 3rem;
@@ -241,7 +240,6 @@ video {
 
 .text {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
     padding: 0 3rem 0 3rem;
 }   
@@ -269,13 +267,25 @@ hr {
     img {
         min-width: 325px;
     }
-    
+    img.landscape {
+        max-height: 450px;
+    }
+
     #medovie img.portrait {
         max-height: 625px;
     }
 
     #becca-europe img.portrait {
         max-height: 525px;
+    }
+
+    #misfit-union .content {
+        max-width: 1280px;
+    }
+
+    #medovie .content,
+    #becca-europe {
+        max-width: 1380px;
     }
 }
 
@@ -323,7 +333,6 @@ hr {
     }
 
     .visual {
-        justify-content: unset;
         padding: 0;
     }
 
