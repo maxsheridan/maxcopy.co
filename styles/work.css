@@ -219,7 +219,7 @@ section {
 img.portrait {
     height: initial;
     max-height: 550px;
-    width: initial;
+    width: auto;
     margin: 0 auto; 
 } 
 
