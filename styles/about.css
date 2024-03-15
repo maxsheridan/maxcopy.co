@@ -125,7 +125,7 @@ nav.links {
 }
 
 nav.links a.active {
-    color: #DF2935;
+    color: #BA1C26;
 }
 
 .footer {
@@ -193,7 +193,7 @@ section {
 
 hr {
     height: 1px;
-    background: #DF2935;
+    background: #BA1C26;
     margin: 1.75rem 0;
     border: 0;
 }
