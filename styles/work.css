@@ -206,6 +206,7 @@ section {
 
 .content {
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1580px;
     margin: 0 auto;
@@ -214,7 +215,7 @@ section {
 .visual {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
     padding: 0 4rem 0 3rem;
 }
 
@@ -242,7 +243,7 @@ video {
 .text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     padding: 0 3rem 0 4rem;
 }   
 
