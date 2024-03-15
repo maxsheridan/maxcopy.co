@@ -197,7 +197,8 @@ nav.links a.active {
 
 section {
     flex: 0 0 100vw;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
     padding: 5.5rem 1.5rem;
     border-right: 1px solid #BA1C26;
 }
