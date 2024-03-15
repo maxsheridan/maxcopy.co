@@ -331,10 +331,6 @@ hr {
         padding: 0 0 2rem 0;
     }
 
-    .visual video {
-        width: 100%;
-    }
-
     .visual img.portrait {
         min-width: unset;
     }
