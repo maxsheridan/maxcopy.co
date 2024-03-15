@@ -190,7 +190,8 @@ nav.links a.active {
 .page {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    max-height: 100vh;
 }   
 
 section {
@@ -292,17 +293,17 @@ hr {
         flex: unset;
         height: 100%;
         min-height: unset;
-        padding: 4rem 1.5rem;
+        padding: 6rem 1.5rem;
         border-bottom: 4px solid #111;
         border-right: none;
     }
 
     section:first-child {
-        padding-top: 8rem;
+        padding-top: 10rem;
     }
 
     section:last-child {
-        padding-bottom: 8rem;
+        padding-bottom: 10rem;
     }
 
     .content {
