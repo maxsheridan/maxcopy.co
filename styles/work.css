@@ -224,10 +224,16 @@ img.portrait {
     margin: 0 auto; 
 } 
 
-img.landscape,
-video {
+img.landscape {
     width: initial;
-    max-width: 800px;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto; 
+} 
+
+video {
+    width: 100%;
+    max-width: 700px;
     height: auto;
     margin: 0 auto; 
 } 
