@@ -273,12 +273,6 @@ hr {
     border: 0;
 }
 
-#contact .description {
-    width: 100%;
-}
-
-
-
 .scroll-cue {
     text-align: right;
     color: #BA1C26;
@@ -290,20 +284,6 @@ hr {
     background: #BA1C26;
     margin: 1.75rem 0;
     border: 0;
-}
-
-@media only screen and (min-width: 1025px) {
-    .row .description:first-child {
-        padding: 0 4rem 0 0;
-    }
-
-    .row .description:last-child {
-        padding: 0 0 0 4rem;
-    }
-
-    .hr-mobile {
-        display: none;
-    }
 }
 
 /*Mobile*/
@@ -336,26 +316,37 @@ hr {
         flex: 0 0 1;
         flex-direction: column;
         margin: 0 auto;
-    }
-
-    .row .inner-row {
         width: 100%;
-        max-width: 40rem;
+        padding: 0;
     }
 
-    .description p {
-        padding-bottom: .5rem;
+    .row-inner {
+        width: 100%;
+        padding: 0;
+    }
+
+    .visual-wrapper {
+        text-align: center;
+    }
+
+    .visual,
+    .text {
+        padding: 0;
+    }
+
+    .visual img, 
+    .visual video {
+        width: initial;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 0 2rem 0;
+    }
+
+    .visual img.portrait {
+        min-width: unset;
     }
 
     .scroll-cue {
-        display: none;
-    }
-    
-  .hr-desktop {
-        display: none;
-    }
-    
-    .placeholder {
         display: none;
     }
 }
