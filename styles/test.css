@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+    cursor: url(/assets/graphics/plus_point.svg), auto;
+}    
+
+html a:hover {
+    cursor: url(/assets/graphics/plus_hover.svg), auto;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        overflow-y: hidden;
+    }
+}
+
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Bold';
+    src: url('/assets/type/ABC_Diatype_Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    font-family: 'ABC Diatype', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #111;
+    margin: 0; 
+}
+
+b,
+strong {
+    font-family: 'ABC Diatype Bold';
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+h3 {
+    font-family: 'ABC Diatype Medium', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #111;
+    margin: 0 0 1rem 0;
+ }
+
+h2 {
+    font-family: 'ABC Diatype Medium', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #BA1C26;
+    margin: 1rem 0 1rem 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    #skills,
+    #about-me {
+        #two,
+        #four {
+            margin-top: 2rem;
+        }
+    }
+}
+
+h1 {
+    font-family: 'ABC Diatype Medium', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #111;
+    margin: 0rem 0 1rem 0;
+}
+
+#contact h1 {
+    color: #BA1C26;
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1.05rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+.header {
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    padding: 0; 
+    border-bottom: 3px solid #111;
+    background-color: whitesmoke;
+}
+
+.header p  {
+    padding: 1rem 0;
+}
+
+nav p a:nth-child(n+2) {
+    padding-left: .5rem;
+}
+
+nav.title {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 50%; 
+    padding-left: 1.5rem;
+}
+
+nav.links {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 50%; 
+    padding-right: 1.5rem;
+}
+
+nav.links a.active {
+    color: #BA1C26;
+}
+
+.footer {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    padding: 0; 
+    border-top: 3px solid #111;
+    background-color: whitesmoke;
+}
+
+.footer {
+    .title {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 50%; 
+    padding-left: 1.5rem;
+    }
+
+    .copyright {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 50%; 
+    padding-right: 1.5rem;
+    }
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}   
+
+section {
+    flex: 0 0 100vw;
+    display: flex;
+    justify-content: center;  /*centers row horizontally*/
+    align-items: center; /*centers row vertically*/
+    padding: 5.5rem 1.5rem;
+    border-right: 1px solid #BA1C26;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /*centers row inner horizontally*/
+    align-items: center; /*centers row inner vertically*/
+    width: 100vw;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.visual {
+    padding: 0 4rem 0 2rem;
+}
+
+img.portrait {
+    height: initial;
+    max-height: 550px;
+    width: auto;
+    margin: 0 auto; 
+} 
+
+img.landscape {
+    width: initial;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto; 
+} 
+
+video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto; 
+} 
+
+.text {
+    padding: 0 2rem 0 4rem;
+}   
+
+.text-wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.scroll-cue {
+    color: #BA1C26;
+    padding-top: 1rem;
+}
+
+hr {
+    height: 1px;
+    background: #BA1C26;
+    margin: 1.75rem 0;
+    border: 0;
+}
+
+#contact .description {
+    width: 100%;
+}
+
+
+
+.scroll-cue {
+    text-align: right;
+    color: #BA1C26;
+    padding: 1rem 0 0 0;
+}
+
+hr {
+    height: 1px; 
+    background: #BA1C26;
+    margin: 1.75rem 0;
+    border: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    .row .description:first-child {
+        padding: 0 4rem 0 0;
+    }
+
+    .row .description:last-child {
+        padding: 0 0 0 4rem;
+    }
+
+    .hr-mobile {
+        display: none;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 1024px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    section {
+        flex: unset;
+        height: 100%;
+        min-height: unset;
+        padding: 4rem 1.5rem;
+        border-bottom: 4px solid #111;
+        border-right: none;
+    }
+
+    section:first-child {
+        padding-top: 8rem;
+    }
+
+    section:last-child {
+        padding-bottom: 8rem;
+    }
+
+    .row {
+        flex: 0 0 1;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .row .inner-row {
+        width: 100%;
+        max-width: 40rem;
+    }
+
+    .description p {
+        padding-bottom: .5rem;
+    }
+
+    .scroll-cue {
+        display: none;
+    }
+    
+  .hr-desktop {
+        display: none;
+    }
+    
+    .placeholder {
+        display: none;
+    }
+}
