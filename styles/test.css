@@ -193,7 +193,7 @@ section {
     display: flex;
     justify-content: center; /*centers row horizontally*/
     align-items: center; /*centers row inner vertically*/
-    width: 100vw;
+    width: 100%;
     max-width: 1620px;
     padding: 0 4rem;
     margin: 0 auto;
@@ -201,51 +201,50 @@ section {
 
 .row-inner {
     display: flex;
-    width: 50vw;
+    width: 50%;
 }
 
 .row-inner:first-child {
     justify-content: flex-end;
+    padding: 0 2rem 0 0;
 }
 
 .row-inner:last-child {
     justify-content: flex-start;
+    padding: 0 0 0 2rem;
 }
 
-.visual {
-    text-align: center;
-    padding: 0 4rem 0 2rem;
+img {
+    max-width: 100%;
+    width: 100%;
 }
 
 img.portrait {
     height: initial;
     height: 100%;
-    max-height: 550px;
-    width: auto;
+    max-height: 650px;
+    width: 100%;
 } 
 
 img.landscape {
     width: initial;
     width: 100%;
     max-width: 700px;
-    height: auto;
+    height: 100%;
 } 
+
+#misfit-union img,
+#becca-europe img {
+    max-height: 550px;
+    width: auto;
+}
 
 video {
     width: initial;
     width: 100%;
     max-width: 700px;
     height: auto;
-} 
-
-.text {
-    padding: 0 2rem 0 4rem;
-}   
-
-.text-wrapper {
-    max-width: 40rem;
-    margin: 0 auto;
-}
+}  
 
 .scroll-cue {
     text-align: right;
@@ -293,19 +292,6 @@ hr {
     }
 }
 
-/*Desktop*/
-
-@media only screen and (min-width: 1025px) {
-
-    #medovie img.portrait {
-        max-height: 625px;
-    }
-
-    #becca-europe img.portrait {
-        max-height: 525px;
-    }
-}
-
 /*Mobile*/
 @media screen and (max-width: 1024px) {
     .page {
@@ -319,17 +305,17 @@ hr {
         flex: unset;
         height: 100%;
         min-height: unset;
-        padding: 6rem 1.5rem;
+        padding: 4rem 1.5rem;
         border-bottom: 4px solid #111;
         border-right: none;
     }
 
     section:first-child {
-        padding-top: 10rem;
+        padding-top: 8rem;
     }
 
     section:last-child {
-        padding-bottom: 10rem;
+        padding-bottom: 8rem;
     }
 
     .row {
@@ -340,12 +326,14 @@ hr {
     }
 
     .row-inner {
+        flex: unset;
         width: unset;
+        padding: 0 !important;
+        max-width: 40rem;
+        margin: 0 auto;
     }
 
-
-    .row-inner, 
-    .visual,
+    .visual
     .text {
         padding: 0;
     }
@@ -356,10 +344,6 @@ hr {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 0 2rem 0;
-    }
-
-    .visual img.portrait {
-        min-width: unset;
     }
 
     .scroll-cue {
