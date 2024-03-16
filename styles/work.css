@@ -43,19 +43,27 @@ body {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'ABC Diatype Bold';
+    src: url('/assets/type/ABC_Diatype_Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 p {
     font-family: 'ABC Diatype', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 1.5; 
+    line-height: 1.5;
     color: #111;
-    margin: 0;
+    margin: 0; 
 }
 
 b,
 strong {
-    font-family: 'ABC Diatype Medium';
-    font-weight: 500;
+    font-family: 'ABC Diatype Bold';
+    font-weight: 600;
 }
 
 a {
@@ -63,26 +71,36 @@ a {
     color: #111;
 }
 
-#longform a {
+#centerfield a {
     border-bottom: 1px solid #BA1C26;
 }
 
 h3 {
     font-family: 'ABC Diatype Medium', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.5rem;
     color: #111;
-    margin: 0;
-}
+    margin: 0 0 1rem 0;
+ }
 
 h2 {
     font-family: 'ABC Diatype Medium', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #BA1C26;
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 1rem 0 1rem 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    #skills,
+    #about-me {
+        #two,
+        #four {
+            margin-top: 2rem;
+        }
+    }
 }
 
 h1 {
@@ -91,11 +109,11 @@ h1 {
     font-weight: 500;
     line-height: 1.3;
     color: #111;
-    margin: 0 0 1rem 0;
+    margin: 0rem 0 1rem 0;
 }
 
 #contact h1 {
-    color: #BA1C26;;
+    color: #BA1C26;
 }
 
 @media screen and (max-width: 480px) {
@@ -156,6 +174,93 @@ nav.links a.active {
     color: #BA1C26;
 }
 
+.page {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}   
+
+section {
+    flex: 0 0 100vw;
+    display: flex;
+    justify-content: center; /*centers row horizontally*/
+    align-items: center; /*centers row vertically*/
+    padding: 5.5rem 1.5rem;
+    border-right: 1px solid #BA1C26;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /*centers row horizontally*/
+    align-items: center; /*centers row inner vertically*/
+    width: 100%;
+    max-width: 1620px;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.row-inner {
+    display: flex;
+    width: 50%;
+}
+
+.text-wrapper {
+    max-width: 95%;
+}
+
+.row-inner:first-child {
+    justify-content: flex-end;
+    padding: 0 4rem 0 0;
+}
+
+.row-inner:last-child {
+    justify-content: flex-start;
+    padding: 0 0 0 4rem;
+}
+
+img {
+    width: 100%;
+}
+
+img.portrait {
+    height: 100%;
+    max-height: 650px;
+    max-width: 100%;
+    width: initial;
+} 
+
+img.landscape {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+} 
+
+#misfit-union img,
+#becca-europe img {
+    max-height: 550px;
+    width: initial;
+}
+
+video {
+    width: initial;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+}
+
+.scroll-cue {
+    text-align: right;
+    color: #BA1C26;
+    padding: 1rem 0 0 0;
+}
+
+hr {
+    height: 1px; 
+    background: #BA1C26;
+    margin: 1.75rem 0;
+    border: 0;
+}
+
 .footer {
     position: fixed; 
     left: 0; 
@@ -189,97 +294,7 @@ nav.links a.active {
     }
 }
 
-.page {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-}   
-
-section {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 5.5rem 1.5rem;
-    border-right: 1px solid #BA1C26;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.visual {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4rem 0 3rem;
-}
-
-img.portrait {
-    height: initial;
-    max-height: 550px;
-    width: auto;
-    margin: 0 auto; 
-} 
-
-img.landscape {
-    width: initial;
-    max-width: 700px;
-    height: auto;
-    margin: 0 auto; 
-} 
-
-video {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    margin: 0 auto; 
-} 
-
-.text {
-    display: flex;
-    flex-direction: column;
-    padding: 0 3rem 0 4rem;
-}   
-
-.text-wrapper {
-    max-width: 40rem;
-    margin: 0 auto;
-}
-
-.scroll-cue {
-    color: #BA1C26;
-    padding-top: 1rem;
-}
-
-hr {
-    height: 1px;
-    background: #BA1C26;
-    margin: 1.75rem 0;
-    border: 0;
-}
-
-/*Desktop*/
-
-@media only screen and (min-width: 1025px) {
-    img {
-        min-width: 325px;
-    }
-
-    #medovie img.portrait {
-        max-height: 625px;
-    }
-
-    #becca-europe img.portrait {
-        max-height: 525px;
-    }
-}
-
 /*Mobile*/
-
 @media screen and (max-width: 1024px) {
     .page {
         display: flex;
@@ -292,34 +307,36 @@ hr {
         flex: unset;
         height: 100%;
         min-height: unset;
-        padding: 6rem 1.5rem;
-        padding: 6rem 1.5rem;
+        padding: 4rem 1.5rem;
         border-bottom: 4px solid #111;
         border-right: none;
     }
 
     section:first-child {
-        padding-top: 10rem;
-        padding-top: 10rem;
+        padding-top: 8rem;
     }
 
     section:last-child {
-        padding-bottom: 10rem;
-        padding-bottom: 10rem;
+        padding-bottom: 8rem;
     }
 
-    .text {
+    .row {
+        flex: 0 0 1;
+        flex-direction: column;
         width: 100%;
-        max-width: 100%;
         padding: 0;
     }
 
-    .visual-wrapper {
-        text-align: center;
+    .row-inner {
+        flex: unset;
+        width: unset;
+        padding: 0 !important;
         max-width: 40rem;
+        margin: 0 auto;
     }
 
-    .visual {
+    .visual
+    .text {
         padding: 0;
     }
 
@@ -329,10 +346,6 @@ hr {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 0 2rem 0;
-    }
-
-    .visual img.portrait {
-        min-width: unset;
     }
 
     .scroll-cue {
