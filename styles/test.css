@@ -201,17 +201,21 @@ section {
 
 .row-inner {
     display: flex;
-    width: 50%;
+    width: 50vw;
+}
+
+.text-wrapper {
+    max-width: 95%;
 }
 
 .row-inner:first-child {
     justify-content: flex-end;
-    padding: 0 2rem 0 0;
+    padding: 0 4rem 0 0;
 }
 
 .row-inner:last-child {
     justify-content: flex-start;
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 4rem;
 }
 
 img {
@@ -244,7 +248,7 @@ video {
     width: 100%;
     max-width: 700px;
     height: auto;
-}  
+}
 
 .scroll-cue {
     text-align: right;
