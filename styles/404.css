@@ -202,11 +202,6 @@ hr {
 
 /*Mobile*/
 @media screen and (max-width: 1024px) {
-    .content {
-        justify-content: flex-start;
-        
-    }
-
     section {
         padding: 4rem 1.5rem;
     }
