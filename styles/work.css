@@ -192,14 +192,15 @@ nav.links a.active {
 .page {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }   
 
 section {
-    flex: 0 0 100vw;
+    flex: 0 0 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     padding: 5.5rem 1.5rem;
     border-right: 1px solid #BA1C26;
 }
@@ -214,7 +215,6 @@ section {
 .visual {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 0 4rem 0 3rem;
 }
 
@@ -242,7 +242,6 @@ video {
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 0 3rem 0 4rem;
 }   
 
