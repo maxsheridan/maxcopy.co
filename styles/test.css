@@ -225,12 +225,10 @@ img {
 img.portrait {
     height: 100%;
     max-height: 650px;
-    width: initial;
-    width: 100%;
+    max-width: 100%;
 } 
 
 img.landscape {
-    width: initial;
     width: 100%;
     max-width: 700px;
     height: 100%;
@@ -240,7 +238,10 @@ img.landscape {
 #becca-europe img {
     max-height: 550px;
     width: initial;
-    width: 100%;
+}
+
+#medovie {
+    width: initial;
 }
 
 video {
