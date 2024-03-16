@@ -201,7 +201,7 @@ section {
 
 .row-inner {
     display: flex;
-    width: 50vw;
+    width: 50%;
 }
 
 .text-wrapper {
