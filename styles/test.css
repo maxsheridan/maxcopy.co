@@ -79,7 +79,7 @@ h3 {
     font-family: 'ABC Diatype Medium', sans-serif;
     font-size: 1.15rem;
     font-weight: 500;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     color: #111;
     margin: 0 0 1rem 0;
  }
@@ -88,7 +88,7 @@ h2 {
     font-family: 'ABC Diatype Medium', sans-serif;
     font-size: 1.35rem;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #BA1C26;
     margin: 1rem 0 1rem 0;
 }
@@ -191,30 +191,48 @@ section {
 
 .row {
     display: flex;
-    justify-content: center; /*centers row inner horizontally*/
+    justify-content: center; /*centers row horizontally*/
     align-items: center; /*centers row inner vertically*/
     width: 100vw;
+    max-width: 1620px;
     padding: 0 4rem;
     margin: 0 auto;
 }
 
+.row-inner {
+    display: flex;
+    width: 50vw;
+}
+
+.row-inner:first-child {
+    justify-content: flex-end;
+}
+
+.row-inner:last-child {
+    justify-content: flex-start;
+}
+
 .visual {
+    text-align: center;
     padding: 0 4rem 0 2rem;
 }
 
 img.portrait {
     height: initial;
+    height: 100%;
     max-height: 550px;
     width: auto;
 } 
 
 img.landscape {
     width: initial;
+    width: 100%;
     max-width: 700px;
     height: auto;
 } 
 
 video {
+    width: initial;
     width: 100%;
     max-width: 700px;
     height: auto;
@@ -278,6 +296,7 @@ hr {
 /*Desktop*/
 
 @media only screen and (min-width: 1025px) {
+
     #medovie img.portrait {
         max-height: 625px;
     }
@@ -319,6 +338,11 @@ hr {
         width: 100%;
         padding: 0;
     }
+
+    .row-inner {
+        width: unset;
+    }
+
 
     .row-inner, 
     .visual,
