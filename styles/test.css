@@ -220,6 +220,7 @@ section {
 
 img {
     max-width: 100%;
+    width: initial;
     width: 100%;
 }
 
@@ -240,7 +241,6 @@ img.landscape {
 #misfit-union img,
 #becca-europe img {
     max-height: 550px;
-    width: initial;
     width: 100%;
 }
 
