@@ -225,13 +225,13 @@ img {
 img.portrait {
     height: 100%;
     max-height: 650px;
-    width: 100%;
     width: initial;
+    width: 100%;
 } 
 
 img.landscape {
-    width: 100%;
     width: initial;
+    width: 100%;
     max-width: 700px;
     height: 100%;
 } 
@@ -239,13 +239,13 @@ img.landscape {
 #misfit-union img,
 #becca-europe img {
     max-height: 550px;
-    width: 100%;
     width: initial;
+    width: 100%;
 }
 
 video {
-    width: 100%;
     width: initial;
+    width: 100%;
     max-width: 700px;
     height: 100%;
 }
