@@ -196,19 +196,18 @@ video {
 
 img.portrait {
     height: 100%;
-    max-height: 550px;
+    max-height: 575px;
     width: initial;
 } 
 
 img.landscape {
     width: 100%;
     min-width: 450px;
-    max-width: 650px;
+    max-width: 700px;
     height: initial;
 } 
 
 video {
-    width: initial;
     width: 100%;
     max-width: 700px;
     height: initial;
@@ -295,6 +294,7 @@ hr {
     video {
         width: initial;
         max-width: 100%;
+        min-width: unset !important;
         margin: 0 auto;
         padding: 0 0 2rem 0;
     }
