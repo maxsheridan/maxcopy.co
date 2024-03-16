@@ -110,7 +110,7 @@ nav p a:nth-child(n+2) {
 
 nav.title {
     position: relative;
-    flex: .33; 
+    flex: .4; 
     display: flex; 
     justify-content: flex-start; 
     align-items: center; 
@@ -120,7 +120,7 @@ nav.title {
 nav.links {
     position: relative; 
     display: flex; 
-    flex: .67;
+    flex: .6;
     justify-content: flex-end; 
     align-items: center; 
     padding-right: 1.5rem;
