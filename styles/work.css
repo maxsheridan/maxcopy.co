@@ -173,9 +173,9 @@ section {
 
 .row {
     display: flex;
-    flex: 0 0 1;
     align-items: center; /*centers row inner vertically*/;
     justify-content: space-around;
+    width: 100%;
     max-width: 1520px;
     padding: 0 4rem;
 }
