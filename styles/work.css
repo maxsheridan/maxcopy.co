@@ -227,7 +227,7 @@ video {
     width: initial;
     width: 100%;
     max-width: 700px;
-    height: 100%;
+    height: initial;
 }
 
 .scroll-cue {
