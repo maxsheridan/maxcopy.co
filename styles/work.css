@@ -173,36 +173,29 @@ section {
 
 .row {
     display: flex;
+    flex: 0 0 1;
     align-items: center; /*centers row inner vertically*/;
-    width: 100%;
-    max-width: 1480px;
+    justify-content: space-around;
+    max-width: 1520px;
     padding: 0 4rem;
-    margin: 0 auto;
 }
 
 .row-inner {
     display: flex;
+    justify-content: space-around;
     flex: .5;
 }
 
-.row-inner:first-child {
+.row.portrait .row-inner:first-child {
     justify-content: flex-end;
 }
 
-.row-inner:last-child {
-    justify-content: flex-start;
-}
-
-.text-wrapper {
-    max-width: 99%;
-}
-
 .row-inner:first-child {
-    padding: 0 2rem 0 0;
+    padding: 0 3rem 0 0;
 }
 
 .row-inner:last-child {
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 3rem;
 }
 
 img {
@@ -211,7 +204,7 @@ img {
 
 img.portrait {
     height: 100%;
-    max-height: 650px;
+    max-height: 625px;
     max-width: 100%;
     width: initial;
 } 
