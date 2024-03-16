@@ -174,15 +174,13 @@ section {
 .row {
     display: flex;
     align-items: center; /*centers row inner vertically*/;
-    justify-content: space-around;
     width: 100%;
-    max-width: 1520px;
+    max-width: 1510px;
     padding: 0 4rem;
 }
 
 .row-inner {
     display: flex;
-    justify-content: space-around;
     flex: .5;
 }
 
