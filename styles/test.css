@@ -240,14 +240,15 @@ img.landscape {
 #misfit-union img,
 #becca-europe img {
     max-height: 550px;
-    width: auto;
+    width: initial;
+    width: 100%;
 }
 
 video {
     width: initial;
     width: 100%;
     max-width: 700px;
-    height: auto;
+    height: 100%;
 }
 
 .scroll-cue {
