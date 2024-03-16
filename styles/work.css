@@ -167,6 +167,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     padding: 5.5rem 1.5rem;
     border-right: 1px solid #BA1C26;
 }
@@ -271,6 +272,7 @@ hr {
     }
 
     section {
+        height: unset;
         padding: 4rem 1.5rem;
         border-bottom: 4px solid #111;
         border-right: none;
