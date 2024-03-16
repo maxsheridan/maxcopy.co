@@ -175,8 +175,8 @@ section {
     display: flex;
     align-items: center; /*centers row inner vertically*/;
     width: 100%;
-    max-width: 1490px;
-    padding: 0 4rem;
+    max-width: 1480px;
+    padding: 0 3.5rem;
 }
 
 .row-inner {
