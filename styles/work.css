@@ -284,6 +284,7 @@ hr {
     .row {
         flex: 1;
         flex-direction: column;
+        max-width: 40rem;
         padding: 0;
     }
 
@@ -294,10 +295,8 @@ hr {
     img.portrait,
     img.landscape, 
     video {
-        width: initial;
         max-width: 100%;
         min-width: unset !important;
-        margin: 0 auto;
         padding: 0 0 2rem 0;
     }
 
