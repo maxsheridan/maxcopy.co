@@ -300,7 +300,7 @@ hr {
         display: none;
     }
     
-  .hr-desktop {
+    .hr-desktop {
         display: none;
     }
     
@@ -311,13 +311,13 @@ hr {
 
 /*Screen size warning*/
 
-@media screen and (min-width: 1025px) and (max-height: 800px)  {
+@media screen and (min-width: 1025px) and (max-height: 780px)  {
     section {
         display: none;
     }
 }
 
-@media screen and (min-width: 1025px) and (max-height: 800px)  {
+@media screen and (min-width: 1025px) and (max-height: 780px)  {
     .page::after {
         display: flex;
         position: relative;
