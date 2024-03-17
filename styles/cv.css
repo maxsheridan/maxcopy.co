@@ -189,11 +189,11 @@ section {
 
 .row {
     display: flex;
-    padding: 0 3rem;
+    width: 100%;
+    padding: 0 3.5rem;
 }
 
-section:not(#contact) .row .description {
-    width: 50%;
+.description {
     max-width: 42rem;
 }
 
@@ -264,6 +264,7 @@ hr {
     }
 
     section {
+        min-height: unset;
         padding: 4rem 1.5rem;
         border-bottom: 4px solid #111;
         border-right: none;
