@@ -292,10 +292,6 @@ hr {
     .description p {
         padding-bottom: .5rem;
     }
-
-    .scroll-cue {
-        display: none;
-    }
     
     .hr-desktop {
         display: none;
@@ -304,6 +300,27 @@ hr {
     .placeholder {
         display: none;
     }
+}
+
+/*Scroll cue*/
+
+section:not(#contact)::after {
+    content:"This way \2192";
+    font-family: 'ABC Diatype';
+    font-size: 1.1rem;
+    color: #BA1C26;
+    position: absolute;
+    bottom: 12.5%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 3rem;
+}   
+
+@media only screen and (max-width: 1024px) {
+section:not(#contact)::after {
+    display: none;
+    }   
 }
 
 /*Screen size warning*/
