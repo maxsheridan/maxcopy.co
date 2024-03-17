@@ -279,7 +279,8 @@ hr {
         padding: 0;
     }
 
-    .text {
+    .text,
+    .visual {
         padding: 0;
     }
 
