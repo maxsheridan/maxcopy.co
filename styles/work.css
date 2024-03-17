@@ -159,7 +159,7 @@ nav.links a.active {
 .page {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }   
 
 section {
@@ -167,7 +167,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /*allows full height*/
+    margin: auto 0; /*keeps content within viewport*/
     padding: 5.5rem 1.5rem;
     border-right: 1px solid #BA1C26;
 }
@@ -176,20 +177,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1520px;
-    padding: 0 3.5rem;
+    padding: 0 3.5rem; 
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
     max-width: 44rem;
     padding: 0 0 0 3rem;
 }
 
-img,
-video {
+.visual {
     padding: 0 3rem 0 0;
 }
 
@@ -197,7 +193,7 @@ img.portrait {
     width: auto;
     min-width: 450px;
     height: auto;
-    max-height: 575px;
+    max-height: 550px;
 } 
 
 img.landscape,
@@ -215,7 +211,7 @@ video {
 }
 
 .scroll-cue {
-    text-align: right;
+    display: flex;
     color: #BA1C26;
     padding: 1rem 0 0 0;
 }
@@ -267,7 +263,7 @@ hr {
     }
 
     section {
-        height: unset;
+        min-height: unset;
         padding: 4rem 1.5rem;
         border-bottom: 4px solid #111;
         border-right: none;
@@ -302,30 +298,5 @@ hr {
 
     .scroll-cue {
         display: none;
-    }
-}
-
-/*Screen size warning*/
-
-@media screen and (min-width: 1025px) and (max-height: 780px)  {
-    section {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-height: 780px)  {
-    .page::after {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        font-family: 'ABC Diatype', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        font-style: normal;
-        content: "Earth to Houston. This screen needs to be a little bigger.";
-        z-index: -1;
     }
 }
