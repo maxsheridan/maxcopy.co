@@ -138,26 +138,11 @@ nav.links a.active {
 
 section {
     flex: 0 0 100vw;
-    padding: 5.5rem 1.5rem;
-}
-
-.content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.text {
-    display: flex;
-}   
-
-.text-wrapper {
-    max-width: 40rem;
-    margin: 0 auto;
-}
+    padding: 5.5rem 1.5rem;
+} 
 
 hr {
     height: 1px;
@@ -196,18 +181,6 @@ hr {
     align-items: center; 
     width: 50%; 
     padding-right: 1.5rem;
-    }
-}
-
-
-/*Mobile*/
-@media screen and (max-width: 1024px) {
-    section {
-        padding: 4rem 1.5rem;
-    }
-    
-    section:first-child {
-        padding-top: 8rem;
     }
 }
 
