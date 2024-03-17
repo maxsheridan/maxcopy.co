@@ -251,6 +251,7 @@ hr {
 }
 
 /*Mobile*/
+
 @media screen and (max-width: 1024px) {
     .page {
         display: block;
@@ -298,6 +299,7 @@ section:not(#contact)::after {
         position: absolute;
         display: flex;
         justify-content: flex-end;
+        bottom: 12.5%;
         width: 100%;
         padding-right: 3rem;
         font-family: 'ABC Diatype';
@@ -308,12 +310,6 @@ section:not(#contact)::after {
 @media only screen and (max-width: 1024px) {
     section:not(#contact)::after {
         display: none;
-    }   
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1480px) {
-    section:not(#contact)::after {
-        bottom: 12.5%;
     }   
 }
 
