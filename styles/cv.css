@@ -179,26 +179,22 @@ nav.links a.active {
 section {
     flex: 0 0 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /*allows full height*/
+    margin: auto 0; /*keeps content within viewport*/
     padding: 5.5rem 1.5rem;
     border-right: 1px solid #BA1C26;
 }
 
 .row {
     display: flex;
-    width: 100%;
-    max-width: 1480px;
-    padding: 0 3.5rem;
+    padding: 0 3rem;
 }
 
-.row .description {
-    width: 50%
-}
-
-#contact .description {
-    width: 100%;
+section:not(#contact) .row .description {
+    width: 50%;
+    max-width: 42rem;
 }
 
 .scroll-cue {
