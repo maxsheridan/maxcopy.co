@@ -190,7 +190,8 @@ section {
 }
 
 img.portrait {
-    width: auto;
+    display: block;
+    width: 100%;
     min-width: 350px;
     height: auto;
     max-height: 550px;
