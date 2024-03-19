@@ -60,17 +60,6 @@ p {
     margin: 0; 
 }
 
-b,
-strong {
-    font-family: 'ABC Diatype Bold';
-    font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-    color: #111;
-}
-
 h3 {
     font-family: 'ABC Diatype Medium', sans-serif;
     font-size: 1.15rem;
@@ -112,16 +101,30 @@ h1 {
     color: #BA1C26;
 }
 
+b,
+strong {
+    font-family: 'ABC Diatype Bold';
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
 @media screen and (max-width: 480px) {
     p {
         font-size: 1.05rem;
     }
+
     h3 {
         font-size: 1.2rem;
     }
+
     h2 {
         font-size: 1.2rem;
     }
+
     h1 {
         font-size: 1.7rem;
     }

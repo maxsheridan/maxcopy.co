@@ -52,21 +52,6 @@ p {
     margin: 0;
 }
 
-b,
-strong {
-    font-family: 'ABC Diatype Medium';
-    font-weight: 500;
-}
-
-a {
-    text-decoration: none;
-    color: #111;
-}
-
-#centerfield a {
-    border-bottom: 1px solid #BA1C26;
-}
-
 h3 {
     font-family: 'ABC Diatype Medium', sans-serif;
     font-size: 1.3rem;
@@ -97,6 +82,22 @@ h1 {
 #contact h1 {
     color: #BA1C26;;
 }
+
+b,
+strong {
+    font-family: 'ABC Diatype Medium';
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+#centerfield a {
+    border-bottom: 1px solid #BA1C26;
+}
+
 
 @media screen and (max-width: 480px) {
     p {
