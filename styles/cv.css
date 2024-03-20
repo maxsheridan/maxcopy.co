@@ -197,6 +197,7 @@ section {
 }
 
 .description {
+    flex: .5;
     max-width: 42rem;
 }
 
@@ -215,11 +216,11 @@ hr {
 
 @media only screen and (min-width: 1025px) {
     .row .description:first-child {
-        padding: 0 4rem 0 0;
+        padding: 0 3rem 0 0;
     }
 
     .row .description:last-child {
-        padding: 0 0 0 4rem;
+        padding: 0 0 0 3rem;
     }
 
     .hr-mobile {
