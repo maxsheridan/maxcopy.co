@@ -198,7 +198,10 @@ section {
 
 .description {
     flex: .5;
-    max-width: 42rem;
+}
+
+.description p {
+    max-width: 39rem;
 }
 
 .scroll-cue {
@@ -292,16 +295,8 @@ hr {
     .row .description {
         width: 100%;
     }
-
-    .description p {
-        padding-bottom: .5rem;
-    }
     
     .hr-desktop {
-        display: none;
-    }
-    
-    .placeholder {
         display: none;
     }
 }
