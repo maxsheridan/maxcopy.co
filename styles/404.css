@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Bold';
+    src: url('/assets/type/ABC_Diatype_Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,47 +51,12 @@ body {
     }
 }
 
-@font-face {
-    font-family: 'ABC Diatype';
-    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'ABC Diatype Medium';
-    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'ABC Diatype Bold';
-    src: url('/assets/type/ABC_Diatype_Bold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
 p {
     font-family: 'ABC Diatype', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5; 
     margin: 0;
-}
-
-b,
-strong {
-    font-family: 'ABC Diatype Bold';
-    font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-    color: #111;
 }
 
 h1 {
@@ -86,6 +75,17 @@ h1 {
     h1 {
         font-size: 1.7rem;
     }
+}
+
+b,
+strong {
+    font-family: 'ABC Diatype Bold';
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
 }
 
 .header {
