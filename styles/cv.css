@@ -203,12 +203,6 @@ section {
     max-width: 39rem;
 }
 
-.scroll-cue {
-    text-align: right;
-    color: #BA1C26;
-    padding: 1rem 0 0 0;
-}
-
 hr {
     height: 1px; 
     background: #BA1C26;
@@ -266,10 +260,6 @@ hr {
 /*Mobile layout*/
 
 @media screen and (max-width: 1024px) {
-    .page {
-        display: block;
-    }
-
     section {
         min-height: unset;
         padding: 4rem 1.5rem;
@@ -286,13 +276,8 @@ hr {
     }
 
     .row {
-        flex: 1;
         flex-direction: column;
         padding: 0;
-    }
-
-    .row .description {
-        width: 100%;
     }
     
     .hr-desktop {
