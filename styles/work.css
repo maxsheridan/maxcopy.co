@@ -181,7 +181,7 @@ section {
 }
 
 .text {
-    max-width: 44rem;
+    max-width: 44rem; /*varies--check inline styles*/
     padding: 0 0 0 3rem;
 }
 
