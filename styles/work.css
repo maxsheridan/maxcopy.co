@@ -33,8 +33,6 @@ html a:hover {
 body {
     background-color: whitesmoke;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 @media screen and (min-width: 1025px) {
@@ -80,7 +78,7 @@ h1 {
 }
 
 #contact h1 {
-    color: #BA1C26;;
+    color: #BA1C26;
 }
 
 @media screen and (max-width: 480px) {
@@ -254,7 +252,7 @@ hr {
 /*Mobile layout*/
 
 @media screen and (max-width: 1024px) {
-    .page{
+    .page {
         display: block;
     }
 
