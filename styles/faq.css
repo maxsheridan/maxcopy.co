@@ -148,13 +148,9 @@ section {
 .text {
     display: flex;
     flex-direction: column;
+    max-width: 40rem;
     padding: 0 2rem 0 2rem;
 }   
-
-.text-wrapper {
-    max-width: 40rem;
-    margin: 0 auto;
-}
 
 hr {
     height: 1px;
