@@ -41,14 +41,6 @@ html a:hover {
 body {
     background-color: whitesmoke;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-@media screen and (min-width: 1025px) {
-    body {
-        overflow-y: hidden;
-    }
 }
 
 p {
@@ -146,7 +138,7 @@ section {
     padding: 5.5rem 1.5rem;
 } 
 
-.text-wrapper {
+.text {
     max-width: 42rem;
     margin: 0 auto;
 }
@@ -194,8 +186,11 @@ hr {
 /*Mobile layout*/
 
 @media screen and (max-width: 1024px) {
-    section {
+    .page {
         display: block;
+    }
+
+    section {
         padding: 8rem 1.5rem;
     }
 }
