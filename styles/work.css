@@ -254,6 +254,10 @@ hr {
 /*Mobile layout*/
 
 @media screen and (max-width: 1024px) {
+    .page{
+        display: block;
+    }
+
     section {
         min-height: unset;
         padding: 4rem 1.5rem;
