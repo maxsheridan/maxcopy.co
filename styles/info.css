@@ -194,7 +194,6 @@ hr {
 /*Mobile layout*/
 
 @media screen and (max-width: 1024px) {
-
     section {
         display: block;
         padding: 8rem 1.5rem;
